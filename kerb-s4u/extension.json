@@ -1,0 +1,19 @@
+{
+    "name": "krb_s4u",
+    "version": "1.0.0",
+    "command_name": "krb_s4u",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Constrained delegation abuse:\n",
+    "long_help": "Perform S4U constrained delegation abuse:\n[Usage]:\n\n krb_s4u /ticket:BASE64 /service:SPN {/impersonateuser:USER | /tgs:BASE64} [/domain:DOMAIN] [/dc:DC] [/altservice:SERVICE] [/ptt] [/nopac] [/opsec] [/self]\nkrb_s4u /user:USER {/aes256:HASH | /rc4:HASH} /service:SPN {/impersonateuser:USER | /tgs:BASE64} [/domain:DOMAIN] [/dc:DC] [/altservice:SERVICE] [/ptt] [/nopac] [/opsec] [/self]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "s4u.x64.o"
+        }
+    ]
+}

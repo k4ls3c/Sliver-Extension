@@ -1,0 +1,19 @@
+{
+    "name": "krb_klist",
+    "version": "1.0.0",
+    "command_name": "krb_klist",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket management:\n",
+    "long_help": "List tickets\n [Usage]:\n\n krb_klist [/luid:LOGINID] [/user:USER] [/service:SERVICE] [/client:CLIENT]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "klist.x64.o"
+        }
+    ]
+}

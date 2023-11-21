@@ -1,0 +1,19 @@
+{
+    "name": "krb_kerberoasting",
+    "version": "1.0.0",
+    "command_name": "krb_kerberoasting",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Roasting:\n",
+    "long_help": "Perform Kerberoasting:\n [Usage]:\n\n krb_kerberoasting /spn:SPN [/nopreauth:USER] [/dc:DC] [/domain:DOMAIN]\nkrb_kerberoasting /spn:SPN /ticket:BASE64 [/dc:DC]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "kerberoasting.x64.o"
+        }
+    ]
+}

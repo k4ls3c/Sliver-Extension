@@ -1,0 +1,19 @@
+{
+    "name": "krb_describe",
+    "version": "1.0.0",
+    "command_name": "krb_describe",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket management:\n",
+    "long_help": "Parse and describe a ticket\n [Usage]:\n\n krb_describe /ticket:BASE64\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "describe.x64.o"
+        }
+    ]
+}

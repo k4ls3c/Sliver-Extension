@@ -1,0 +1,19 @@
+{
+    "name": "krb_changepw",
+    "version": "1.0.0",
+    "command_name": "krb_changepw",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Reset a user's password from a supplied TGT\n",
+    "long_help": "[Usage]:\n\n krb_changepw /ticket:BASE64 /new:PASSWORD [/dc:DC] [/targetuser:USER] [/targetdomain:DOMAIN]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "changepw.x64.o"
+        }
+    ]
+}

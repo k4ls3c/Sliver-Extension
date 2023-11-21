@@ -1,0 +1,19 @@
+{
+    "name": "krb_asreproasting",
+    "version": "1.0.0",
+    "command_name": "krb_asreproasting",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Roasting:\n",
+    "long_help": "Perform AS-REP roasting:\n[Usage]:\n\n krb_asreproasting /user:USER [/dc:DC] [/domain:DOMAIN] [/aes]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "asreproasting.x64.o"
+        }
+    ]
+}

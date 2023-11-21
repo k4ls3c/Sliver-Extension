@@ -1,0 +1,19 @@
+{
+    "name": "krb_renew",
+    "version": "1.0.0",
+    "command_name": "krb_renew",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket requests and renewals:\n",
+    "long_help": "Renew a TGT\n[Usage]:\n\n krb_renew /ticket:BASE64 [/dc:DC] [/ptt]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "renew.x64.o"
+        }
+    ]
+}

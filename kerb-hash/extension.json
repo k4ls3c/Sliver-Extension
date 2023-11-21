@@ -1,0 +1,19 @@
+{
+    "name": "krb_hash",
+    "version": "1.0.0",
+    "command_name": "krb_hash",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Calculate rc4_hmac, aes128_cts_hmac_sha1, aes256_cts_hmac_sha1 hashes:\n",
+    "long_help": "[Usage]:\n\n krb_hash /password:PASSWORD [/user:USER] [/domain:DOMAIN]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "hash.x64.o"
+        }
+    ]
+}

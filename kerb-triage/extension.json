@@ -1,0 +1,19 @@
+{
+    "name": "krb_triage",
+    "version": "1.0.0",
+    "command_name": "krb_triage",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket management:\n",
+    "long_help": "Triage tickets\n[Usage]:\n\n krb_triage [/luid:LOGINID] [/user:USER] [/service:SERVICE] [/client:CLIENT]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "triage.x64.o"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "krb_asktgs ",
+    "version": "1.0.0",
+    "command_name": "krb_asktgs ",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket requests",
+    "long_help": "Retrieve a TGS\n [Usage]:\n\nkrb_asktgs ticket:BASE64 /service:SPN1,SPN2,... [/domain:DOMAIN] [/dc:DC] [/tgs:BASE64] [/targetdomain:DOMAIN] [/targetuser:USER] [/enctype:{rc4|aes256}] [/ptt] [/keylist] [/u2u] [/opsec]\n\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "asktgs.x64.o"
+        }
+    ]
+}

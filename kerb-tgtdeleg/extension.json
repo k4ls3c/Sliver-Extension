@@ -1,0 +1,19 @@
+{
+    "name": "krb_tgtdeleg",
+    "version": "1.0.0",
+    "command_name": "krb_tgtdeleg",
+    "extension_author": "Cyderes",
+    "original_author": "RalfHacker ",
+    "repo_url": "https://github.com/RalfHacker/Kerbeus-BOF",
+    "help": "Ticket management:\n",
+    "long_help": "Retrieve a usable TGT for the current user without elevation by abusing the Kerberos GSS-API\n[Usage]:\n\n krb_tgtdeleg [/target:SPN]\n",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "tgtdeleg.x64.o"
+        }
+    ]
+}
